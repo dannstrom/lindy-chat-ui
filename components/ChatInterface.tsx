@@ -41,7 +41,8 @@ export default function ChatInterface() {
     setLoading(true)
 
     try {
-      const response = await axios.post('http://localhost:8000/chat', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+      const response = await axios.post(`${apiUrl}/chat`, {
         message: input,
         session_id: sessionId,
         generate_image: true
