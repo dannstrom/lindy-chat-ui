@@ -101,7 +101,7 @@ export default function ChatInterface() {
         {loading && (
           <div className="flex justify-start">
             <div className="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg">
-              Generating your outfit...
+              Thinking...
             </div>
           </div>
         )}
